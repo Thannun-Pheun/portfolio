@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#07080A" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F6F7F9" />
+    <title>Pheun Thannun — IT Student &amp; Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Pheun Thannun — IT student at Build Bright University, Project Associate at Digital Divide Data, and web developer (front-end & Node.js/MongoDB back end) based in Battambang, Cambodia."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pheun Thannun — IT Student & Web Developer" />
+    <meta property="og:description" content="Front-end & back-end web developer · Project Associate at Digital Divide Data · Battambang, Cambodia." />
+    <meta property="og:image" content="./og-cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <script>
+      // Set the theme before first paint so there is no flash.
+      (function () {
+        var saved;
+        try { saved = localStorage.getItem("pt-theme"); } catch (e) {}
+        var theme =
+          saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
